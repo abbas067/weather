@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="box">
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-50x50">
+
+
+
+            </figure>
+        </div>
+        <div class="media-content">
+            <div class="content">
+                <p>
+                    <span style="color:blue">{{ weather.city }} ,{{weather.country}}</span>  {{weather.description}}
+                    <br>
+                  {{ weather.temperature }}°C temperature from {{weather.tempmin}} to {{weather.tempmax}}°C ,wind {{ weather.wind }} m/s.
+                  <br>clouds {{weather.cloud}} %, {{weather.pressure}} hPa<br>
+                    <span style="color:blue">Geo coords [{{weather.lat}},{{weather.lon}}]</span>
+                </p>
+            </div>
+        </div>
+    </article>
+</div>
+  </body>
+</html>
